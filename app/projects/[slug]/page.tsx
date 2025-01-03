@@ -67,29 +67,16 @@ export default async function Page({
       {project.images ? (
         <div className={`w-full flex ${project.device === "phone" ? "imgGrid" : "flex-col"} gap-[10px]`}>
           {project?.images?.map((image, index) => (
-            project.device === "phone" ? (
-              <Image
-                key={index}
-                src={image}
-                alt={`${project.name} image ${index + 1}`}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: '100%', height: 'auto' }}
-                className="object-cover rounded-[6px]"
-              />
-            ) : (
-                <Image
-                  key={index}
-                  src={image}
-                  alt={`${project.name} image ${index + 1}`}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className="object-cover rounded-[6px]"
-                />
-            )
+            <Image
+              key={index}
+              src={image}
+              alt={`${project.name} image ${index + 1}`}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
+              className="object-cover rounded-[6px]"
+            />
           ))}
         </div>
       ) : null}
