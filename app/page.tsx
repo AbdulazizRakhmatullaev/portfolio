@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <div className='text-left my-6'>
-        I'm a Data Engineer & Software Engineer crafting sleek, high-performing websites and robust database solutions. I specialize in creating seamless user experiences through efficient code, clean designs, and optimized systems. I bring precision, creativity, and efficiency to every project.
+        I&lsquo;m a Data Engineer & Software Engineer crafting sleek, high-performing websites and robust database solutions. I specialize in creating seamless user experiences through efficient code, clean designs, and optimized systems. I bring precision, creativity, and efficiency to every project.
       </div>
       <div className='text-left border-b-[1px] pb-6 border-[#e1e4e8]'>Previously worked at <Link href="https://maab.uz/" className='text-[#1e7fff] hover:underline'>MAAB ↗</Link> primarily as a Data engineer.</div>
       <div className='procon mt-6 flex items-start'>

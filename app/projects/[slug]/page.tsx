@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'; // To handle invalid slugs
 import { projs } from '../../../data/projects';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default async function Page({
   params,
@@ -67,9 +68,25 @@ export default async function Page({
         <div className={`w-full flex ${project.device === "phone" ? "imgGrid" : "flex-col"} gap-[10px] pb-8`}>
           {project?.images?.map((image, index) => (
             project.device === "phone" ? (
-              <img key={index} src={image} alt={`${project.name} image ${index + 1}`} className="w-auto object-cover rounded-[6px]" />
+              <Image
+                key={index}
+                src={image}
+                alt={`${project.name} image ${index + 1}`}
+                layout="responsive" // Automatically adjusts height based on aspect ratio
+                width={100} // This is relative; you define the aspect ratio here
+                height={50} // Adjust to match the desired aspect ratio
+                className="object-cover rounded-[6px]"
+              />
             ) : (
-              <img key={index} src={image} alt={`${project.name} image ${index + 1}`} className="w-full object-cover rounded-[6px]" />
+                <Image
+                  key={index}
+                  src={image}
+                  alt={`${project.name} image ${index + 1}`}
+                  layout="responsive" // Automatically adjusts height based on aspect ratio
+                  width={100} // This is relative; you define the aspect ratio here
+                  height={50} // Adjust to match the desired aspect ratio
+                  className="object-cover rounded-[6px]"
+                />
             )
           ))}
         </div>
