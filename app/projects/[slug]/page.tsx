@@ -16,7 +16,7 @@ export default async function Page({
   }
 
   return (
-    <div className={`flex flex-col gap-[15px] ${project.images ? "" : "justify-center"} h-screen w-full py-8`}>
+    <div className={`flex flex-col gap-[15px] ${project.images ? "" : "justify-center"} w-full`}>
       <div className='flex justify-between items-center'>
         <Link href="/" className='flex gap-1 items-center cursor-pointer hover:opacity-50'>
           <svg width="13" height="13" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@ export default async function Page({
         </div>
       </div>
       {project.images ? (
-        <div className={`w-full flex ${project.device === "phone" ? "imgGrid" : "flex-col"} gap-[10px] pb-8`}>
+        <div className={`w-full flex ${project.device === "phone" ? "imgGrid" : "flex-col"} gap-[10px]`}>
           {project?.images?.map((image, index) => (
             project.device === "phone" ? (
               <Image

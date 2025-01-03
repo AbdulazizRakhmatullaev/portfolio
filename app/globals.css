@@ -67,11 +67,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
+  min-height: 100%;
 }
 
 .concol {
+  padding: 20px 0;
   width: 520px;
 }
 
