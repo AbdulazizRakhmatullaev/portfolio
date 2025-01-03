@@ -118,6 +118,10 @@ body {
     width: 100% !important;
   }
 
+  .lnks {
+    gap: 15px;
+  }
+
   .vh {
     display: none;
   }

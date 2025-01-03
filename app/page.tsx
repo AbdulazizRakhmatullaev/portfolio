@@ -51,7 +51,7 @@ export default function Home() {
             <svg className='mr-[-2px]' xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fillRule="evenodd" d="M8 13.5c3.0376 0 5.5-2.4624 5.5-5.5S11.0376 2.5 8 2.5 2.5 4.9624 2.5 8s2.4624 5.5 5.5 5.5ZM15 8c0 3.866-3.134 7-7 7s-7-3.134-7-7 3.134-7 7-7 7 3.134 7 7Z M8 12a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 1 1.5 0v3.5A.75.75 0 0 1 8 12Z M7.1 4.9a.9.9 0 1 1 1.8 0 .9.9 0 0 1-1.8 0Z" /></svg>
             <div className='font-depMon uppercase text-[11px] leading-none'>Projects</div>
           </div>
-          <div className='mt-3 flex flex-col text-black'>
+          <div className='mt-3 flex flex-col text-black lnks'>
             {projs.map((proj) => (
               <Link key={proj.slug} href={`projects/${proj.slug}`} className='flex justify-between items-center hover:opacity-50 w-full h-full top-0 left-0'>
                 <div>{proj.name}</div>
@@ -67,7 +67,7 @@ export default function Home() {
             <svg className='mr-[-2px]' xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fillRule="evenodd" d="M8 13.5c3.0376 0 5.5-2.4624 5.5-5.5S11.0376 2.5 8 2.5 2.5 4.9624 2.5 8s2.4624 5.5 5.5 5.5ZM15 8c0 3.866-3.134 7-7 7s-7-3.134-7-7 3.134-7 7-7 7 3.134 7 7Z M8 12a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 1 1.5 0v3.5A.75.75 0 0 1 8 12Z M7.1 4.9a.9.9 0 1 1 1.8 0 .9.9 0 0 1-1.8 0Z" /></svg>
             <div className='font-depMon uppercase text-[11px] leading-none'>Contact</div>
           </div>
-          <div className='mt-3 flex flex-col text-black'>
+          <div className='mt-3 flex flex-col text-black lnks'>
             <Link href="mailto:rakhmatullaevabdulaziz@gmail.com" className='flex justify-between items-center hover:opacity-50'>
               <div>Email</div>
               <div>↗</div>

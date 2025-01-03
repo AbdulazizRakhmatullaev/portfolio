@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className="select-none">
         <ThemeProvider
           attribute="data-theme"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
