@@ -60,7 +60,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className='vh h-[90px] w-[1px] bg-[#e1e4e8] mx-5'></div>
+        <div className='vh h-[110px] w-[1px] bg-[#e1e4e8] mx-5'></div>
         <div className='hh my-5 none'></div>
         <div className="cont w-1/2">
           <div className='w-full flex items-center gap-1'>
@@ -78,6 +78,10 @@ export default function Home() {
             </Link>
             <Link href="https://t.me/AbdulazizRakhmatullaev" className='flex justify-between items-center hover:opacity-50'>
               <div>Telegram</div>
+              <div>↗</div>
+            </Link>
+            <Link href="/resume.pdf" download={"/resume"} className='flex justify-between items-center hover:opacity-50'>
+              <div>Resume</div>
               <div>↗</div>
             </Link>
           </div>

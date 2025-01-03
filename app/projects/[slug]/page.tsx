@@ -72,9 +72,10 @@ export default async function Page({
                 key={index}
                 src={image}
                 alt={`${project.name} image ${index + 1}`}
-                layout="responsive" // Automatically adjusts height based on aspect ratio
-                width={100} // This is relative; you define the aspect ratio here
-                height={50} // Adjust to match the desired aspect ratio
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
                 className="object-cover rounded-[6px]"
               />
             ) : (
@@ -82,9 +83,10 @@ export default async function Page({
                   key={index}
                   src={image}
                   alt={`${project.name} image ${index + 1}`}
-                  layout="responsive" // Automatically adjusts height based on aspect ratio
-                  width={100} // This is relative; you define the aspect ratio here
-                  height={50} // Adjust to match the desired aspect ratio
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
                   className="object-cover rounded-[6px]"
                 />
             )
