@@ -80,14 +80,10 @@ export default function Home() {
               <div>Telegram</div>
               <div>↗</div>
             </Link>
-            <a
-              href="/resume.pdf"
-              download="AbdulazizR"
-              className="flex justify-between items-center hover:opacity-50"
-            >
+            <Link href="/resume.pdf" className='flex justify-between items-center hover:opacity-50'>
               <div>Resume</div>
               <div>↗</div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

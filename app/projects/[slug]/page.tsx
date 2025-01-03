@@ -16,9 +16,9 @@ export default async function Page({
   }
 
   return (
-    <div className={`flex flex-col gap-[15px] ${project.images ? "" : "justify-center"} w-full`}>
-      <div className='flex justify-between items-center'>
-        <Link href="/" className='flex gap-1 items-center cursor-pointer hover:opacity-50'>
+    <div className={`flex flex-col gap-[15px] ${project.images ? "" : "justify-center"} w-full relative`}>
+      <div className='flex justify-center'>
+        <Link href="/" className='absolute bb left-0 flex gap-1 items-center cursor-pointer hover:opacity-50'>
           <svg width="13" height="13" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g id="Page-2" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
               <g id="back_24">
@@ -30,11 +30,11 @@ export default async function Page({
           <div>Back</div>
         </Link>
         <div className='text-[16px] font-bold'>{project.name}</div>
-
+        <div className=''></div>
       </div>
       <div className="abt">
-        <div className='text-left border-b-[1px] mt-5 pb-6 border-[#e1e4e8]'>
-          <div className='flex flex-col mt-1'>{project.description}</div>
+        <div className='text-left border-b-[1px] pb-6 border-[#e1e4e8]'>
+          <div className='flex flex-col'>{project.description}</div>
         </div>
 
         <div className='flex justify-between items-center my-6'>

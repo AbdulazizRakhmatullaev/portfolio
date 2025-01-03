@@ -100,6 +100,11 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
+
+.bb {
+  top: 3px;
+}
+
 @media only screen and (max-width: 630px) {
   body {
     font-size: 14px;
@@ -131,5 +136,9 @@ body {
     height: 1px;
     width: 100%;
     background: var(--border-color);
+  }
+
+  .bb {
+    top: 1.5px;
   }
 }
