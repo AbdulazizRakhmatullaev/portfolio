@@ -1,6 +1,13 @@
-import { styleText } from "util";
-
 export const projs = [
+    {
+        slug: "crackedzone",
+        name: "Crackedzone",
+        description: "Crypto mini app in Telegram, where users can earn token called $CZ which will have a unique value in crypto world. It's still on beta stage, but people can already earn their desired token.",
+        images: ["/crkdzone/1.jpg", "/crkdzone/2.jpg", "/crkdzone/3.jpg", "/crkdzone/4.jpg", "/crkdzone/5.jpg"],
+        device: "phone",
+        date: "Oct 2024 - Present",
+        url: "https://t.me/crackedzone_bot"
+    },
     {
         slug: "houz",
         name: "Houz",
@@ -8,16 +15,6 @@ export const projs = [
         images: ["/houz/vid.gif", "/houz/01.png", "/houz/02.png", "/houz/03.png", "/houz/04.png"],
         date: "Feb 2024 - Jun 2024"
     },
-    {
-        slug: "crackedzone",
-        name: "Crackedzone",
-        description: "Crypto mini app in Telegram, where users can earn token called $CZ which will have a unique value in crypto world. It's still on beta stage, but people can already earn their desired token.",
-        images: ["/crkdzone/1.jpg", "/crkdzone/2.jpg", "/crkdzone/3.jpg"],
-        device: "phone",
-        date: "Oct 2024 - Present",
-        url: "https://t.me/crackedzone_bot"
-    },
-
     {
         slug: "peace",
         name: "Peace",
