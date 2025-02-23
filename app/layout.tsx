@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "./components/theme-provider"
-import PageWrapper from './components/fm';
-import { AnimatePresence } from 'framer-motion';
+import { ThemeProvider } from "./components/theme-provider";
+import PageWrapper from "./components/fm";
+import { AnimatePresence } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Abdulaziz R",
@@ -33,7 +34,10 @@ export default function RootLayout({
           <AnimatePresence mode="wait">
             <PageWrapper>
               <main id="main">
-                <div className="concol">{children}</div>
+                <div className="concol">
+                  {children}
+                  <Analytics />
+                </div>
               </main>
             </PageWrapper>
           </AnimatePresence>
